@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div id="playground">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game: Clicker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button onmousedown="start_game()">Start</button>
+      </header>
 
-        <header>
-            <button onclick="start_game()">Start</button>
-        </header>
-
-        <div onmousedown="miss(event)" id="area">
-            <div onmousedown="hit()" id="object"></div>
-        </div>
-
+      <div id="area" onmousedown="miss(event)">
+        <div onmousedown="hit()" id="object"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
